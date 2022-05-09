@@ -6,8 +6,8 @@ btnSend.addEventListener("click", () => {
   let precioTotal = precioUnitario * cantidad;
   let descuento = precioTotal * 0.15;
 
-  let mes = Number(dato3.value);
-  if (mes === 10) {
+  let mes: string = dato3.value;
+  if (mes === "octubre") {
     console.log(" Monto Total Con Descuento: " + descuento);
   } else {
     console.log(" Ud. No Tine Descuento, El Monto Final es: " + precioTotal);
