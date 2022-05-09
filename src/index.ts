@@ -4,7 +4,7 @@ btnSend.addEventListener("click", () => {
   let precioUnitario = Number(dato1.value);
   let cantidad = Number(dato2.value);
   let precioTotal = precioUnitario * cantidad;
-  let descuento = precioTotal * 0.15;
+  let descuento = precioTotal - precioTotal * 0.15;
 
   let mes: string = dato3.value;
   if (mes === "octubre") {
